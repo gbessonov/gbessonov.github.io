@@ -51,4 +51,5 @@
 .footer{
 	max-width: var(--max-width);
 	width: 100%;
+	padding: 0 1rem;
 }
