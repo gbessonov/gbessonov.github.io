@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 	min-height: 100vh;
-	padding: 3rem 0;
+	padding: 3rem 0 0 0;
 	gap: 1rem;
 }
 
@@ -46,7 +46,6 @@
 	padding: 1rem 0 0 0;
 	color: rgb(var(--foreground-shaded-rgb));
 	background-color: rgb(var(--background-shaded-rgb));
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;;
 }
 
 .footer{

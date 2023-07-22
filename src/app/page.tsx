@@ -12,7 +12,7 @@ export default function Home() {
 		<div className={styles.main_container}>
 			<header className={css_classes(styles.header, styles.section)}>
 				<h1>Welcome</h1>
-				<h2>I'm Gregory, full-stack software engineer.</h2>
+				<h2>I&apos;m Gregory, full-stack software engineer.</h2>
 			</header>
 			<main className={css_classes(styles.main, styles.section)}>
 				<Card
