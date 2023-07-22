@@ -4,21 +4,39 @@
 }
 
 .card__header{
-	padding: 1rem;
+	margin: 0;
 }
 
 .card__main{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: start;
+	align-items: flex-start;
 	gap: 1em;
+}
+
+.card__img_container{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+
+.card__img{
+	width: 100%;
+	height: auto;
+	transform: scaleX(1) scaleY(1) scaleZ(1);
+	transform-style: preserve-3d;
+	transition: transform 200ms ease-out 0s;
+}
+
+.card__img:hover{
+	transform: scaleX(1.04) scaleY(1.04) scaleZ(1);
 }
 
 .card__footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: start;
+	align-items: flex-start;
 	gap: 1em;
 }

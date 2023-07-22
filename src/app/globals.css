@@ -1,11 +1,11 @@
 :root {
 	--max-width: 1100px;
 
-	--foreground-rgb: 34, 34, 34;
+	--foreground-rgb: 42, 52, 62;
 	--foreground-shaded-rgb: 102, 102, 102;
 
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+	--background-rgb: 255, 255, 255;
+	--background-shaded-rgb: 242, 242, 252;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,8 +13,7 @@
 		--foreground-rgb: 255, 255, 255;
 		--foreground-shaded-rgb: 128, 128, 128;
 
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
+		--background-rgb: 0, 0, 0;
 	}
 }
 
@@ -22,6 +21,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	font-family: 'Serif roman', sans-serif;
 }
 
 html,
@@ -32,17 +32,28 @@ body {
 
 body {
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+	background: rgb(var(--background-rgb));
 }
 
 a {
-	color: inherit;
-	text-decoration: underline;
+	color: rgb(var(--foreground-shaded-rgb));
+	text-decoration: none;
+}
+
+h1, h2{
+	font-weight: 300;
+}
+
+h1{
+	margin: 1.1rem 0;
+}
+h2{
+	margin: 1rem 0;
+}
+h3{
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin:0.5rem 0;
 }
 
 @media (prefers-color-scheme: dark) {
